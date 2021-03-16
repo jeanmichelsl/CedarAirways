@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="images/logo.png" type="image/icon type">
+	<title>Cedar Airways | Discover the World With Us!</title>
+	<link rel="stylesheet" type="text/css" href="css/contact_us.css">
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+	<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body style="background-image: url('images/contact_us.jpg');">
+
+<nav class="navbar navbar-expand-md navbar-inverse  " style="background-color: rgba(204, 204, 204, 0.3);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo image" height="85px" width="80px"></a>
+    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="mainNavigation">
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item">
+          <a class="nav-link" href="Book_a_trip.html"><span class="fa fa-plane"></span> Book a Trip</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Traveler_info.html"><span class="fa fa-suitcase"></span> Traveler Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about_us.html"><span class="fa fa-info"></span> About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><span class="fa fa-address-card"></span> Contact Us</a>
+        </li>
+        </ul>
+        
+      </div> <!--div for collapse navbar-collapse -->
+    </div> <!-- div for container-fluid -->   
+  </nav>
+
+    <div class="description">
+        <h1>We'd Love To Hear From You!</h1>
+    </div>
+    
+    <div class="row row-content d-flex justify-content-center">
+        <div class="col-12 col-md-9">
+        <form id="contactForm" autocomplete="on" class="contact_form">            
+            <div class="form-row">
+                <div class="form-group col-12 col-sm-6">
+                    <label for="fname">First Name:</label>                
+                    <input type="text" width="auto" class="form-control" id="fname" name="fname" placeholder="First Name..." required>
+                </div>
+                <div class="form-group col-12 col-sm-6">                    
+                    <label for="lname">Last Name:</label>               
+                    <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name..." required>
+                </div>
+            </div>            
+            <div class="form-row">
+                <div class="form-group col-12 col-sm-6">
+                    <label for="phone">Phone Number:</label>                
+                    <input class="form-control" type="tel" id="phone" name="phone" placeholder="eg 961-76-123456" pattern="[0-9]{3}-[0-9]{2}-[0-9]{6}" required>
+                </div>
+                <div class="form-group col-12 col-sm-6">
+                    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Email Adress..." required>
+    <small id="emailsmall" class="form-text text-white">We'll never share your email with anyone else.</small>
+                </div>
+            </div>
+
+            <div class="form-row">
+             <div class="form-group col-sm-6">          
+                    <label for="options">Select a Subject:</label>                
+                    <select class="form-control" required id="options">
+                        <option value="" disabled selected>Select your option</option>
+                        <option value="Booking_Info">Booking Info</option>
+                        <option value="Baggage_Info">Baggage Info</option>
+                        <option value="Ticketing">Ticketing</option>
+                        <option value="Cedar_Miles">Cedar Miles</option>
+                        <option value="Online_Checkin">Online Checkin</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>  </div>      
+                <div class="form-row">         
+                <div class="form-group col-sm-6">
+                    <label for="subject">Message:</label>                
+                    <textarea id="subject" name="subject"class="form-control" placeholder="Let Us Know How We Can Help You!" rows="3"></textarea>
+                </div> </div>
+            
+            <div class="form-row">
+                <div class="form-group col-12 col-sm-6">
+                    <input type="submit" value="Submit" data-toggle="modal" data-target="contactModal" class="btn btn-lg btn-primary" type="button" id="submitbtn">
+                    <input type="reset" value="Clear" class="btn btn-lg btn-danger">
+                </div>
+            </div>
+        </form>
+    </div></div>
+            
+<div class="container">
+    <div class="row row-content">
+<table class="table table-light table-striped table-sm">
+    <thead > 
+        <tr class="bg-primary"><td class="bg-primary"><h4 class="text-white">Alternatively, contact us at our following addresses:</h4></td>
+            <td class="bg-primary"></td></tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th scope="row"><h6>Help Center:</h6></th>
+      <td><a href="mailto:help@cedarairways.com">help@cedarairways.com</a></td>
+      
+    </tr>
+    <tr>
+      <th scope="row"><h6>Call Center:</h6></th>
+      <td><a href="mailto:callcenter@cedarairways.com"> callcenter@cedarairways.com</a></td>
+      
+    </tr>
+    <tr>
+      <th scope="row"><h6>Offices:</h6
+></th>
+      <td><a href="mailto:offices@cedarairways.com">offices@cedarairways.com</a></td>
+      
+    </tr>
+    <tr>
+      <th scope="row"><h6>Baggage Handlers:</h6
+></th>
+      <td><a href="mailto:baggage@cedarairways.com">baggage@cedarairways.com</a
+></td>
+      
+    </tr>
+    <tr>
+      <th scope="row"><h6>Careers:</h6></th>
+      <td><a href="mailto:careers@cedarairways.com">careers@cedarairways.com</a></td>
+      
+    </tr>
+  </tbody>
+</table></div></div>
+
+<footer class="footer">
+         <div class="container">
+                <div class="row">
+                    <div class="col-4 offset-1 col-sm-2">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="Book_a_trip.html">Book a Trip</a></li>
+                            <li><a href="Traveler_info.html">Traveler Info</a></li>
+                            <li><a href="about_us.html">About Us</a></li>
+                            <li><a href="Contact_us.html">Contact Us</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-7 col-sm-5">
+                        <h5>Our Address</h5>
+                        <address>
+                            Beirut International Airport,<br>
+                            Airport road, Beirut<br>
+                            Lebanon<br>
+                            <i class="fa fa-phone fa-lg"></i> +961 1 629999<br>
+                            <i class="fa fa-fax fa-lg"></i> +961 1 629990<br>
+                            <i class="fa fa-envelope fa-lg"></i> <a href="mailto:help@cedarairways.com">help@cedarairways.com</a>
+                        </address>
+                    </div>
+                    <div class="col-12 col-sm-4 align-self-center">
+                        <div class="text-center">
+                           
+                            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa-lg fa fa-facebook"></i></a>
+                            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa-linkedin fa fa-lg"></i></a>
+                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa-twitter fa fa-lg"></i></a>
+                            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa-youtube fa fa-lg"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <p>© Copyright 2021 Cedar Airways</p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

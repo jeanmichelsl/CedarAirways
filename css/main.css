@@ -1,0 +1,72 @@
+body{
+	
+	background-size: cover;
+    background-position: center;
+    background-attachment: fixed;/*doesn't scroll with the page */
+    background-repeat: no-repeat; 
+    
+}
+
+
+
+.nav-link {
+	font-size: 4vh;
+	color: azure;
+	
+}
+.nav-item, .navbar-toggler{
+	color: azure;
+}
+#loginBtn {
+	font-size: 4vh;
+	cursor: pointer;
+	color: azure;
+}
+#loginBtn:hover {
+	color: #007bff;
+}
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 50px;
+  background-color:rgba(204, 204, 204, 0.3) !important;
+  color: azure; }
+
+  .row-header {
+  margin: 0px auto;
+  padding: 0px 0px; }
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px; }
+
+#letsfly:hover {
+	text-decoration: none;
+}
+
+nav ul li .active {
+	color: #0275d8;
+	
+}
+.footer {
+  background-color: #0275d8;
+  margin: 0px auto;
+  padding: 20px 0px;
+  color: azure; }
+
+  address, {
+  font-size: 80%;
+  margin: 0px;
+  color: azure; }
+
+  address a {
+  	color: azure;
+  }
+  address a:hover {
+  	color: azure;
+  }
+
+  .list-unstyled li a {
+  	color: azure;
+  }
