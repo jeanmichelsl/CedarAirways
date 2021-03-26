@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 </head>
 
-<body style="background-image: url('images/About_Us.jpg');">
-    <nav class="navbar navbar-expand-md navbar-inverse  " style="background-color: rgba(204, 204, 204, 0.2);">
+<body style="background-color: azure;">
+    <nav class="navbar navbar-expand-md navbar-inverse  " style="background-color: #7CC6FE;">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo image" height="85px" width="80px"></a>
             <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,42 +50,41 @@
     </ul>
     <img class="img-fluid" src="images/ourfleet.jpg" alt="picture of an airplane">
     <div class="container">
-        <h3> Cedar Airways has one of the most modern fleets in the world. Our all-new fleet gives you the world´s most sophisticated cabin and represents the ultimate operational efficiency, extended cabin space and increased flying range.</h3>
+        <div class="row row-content">
+        <h3 class="text-center"> Cedar Airways has one of the most modern fleets in the world. Our all-new fleet gives you the world´s most sophisticated cabin and represents the ultimate operational efficiency, extended cabin space and increased flying range.</h3></div>
+        <div class=" row-content" id="ourfleet">
+            <h1 class="text-center text-primary" style="font-size: 9vh;"><i class="fa fa-plane"></i> Our Fleet</h1>
 
-        <div id="ourfleet">
-        <h1 class="description text-primary">Our Fleet</h1>
-    </div>
-    </div>
-    
-    <div class="container">
-        <div class="d-flex col-md-3 "><img class="img-fluid rounded" src="images/330.jpg" alt="image of 330 airplane" data-toggle="modal" data-target="#A-330">
-            <h4> Airbus 330-200</h4>
         </div>
-        <div class="d-flex col-md-3 "><img class="img-fluid rounded" src="images/320.jpg" alt="image of 320 airplane" data-toggle="modal" data-target="#A-320">
-            <h4> Airbus 320-200</h4>
+    </div>
+    <div class="container"> <div class="row">
+        <div class=" flexpic col-12 col-md-4 "data-toggle="modal" data-target="#A-330"><img class=" rounded" src="images/330.jpg" alt="image of 330 airplane" style="height: 200px; width: 350px;">
+            <h4 > Airbus 330-200</h4>
         </div>
-    
-    <div class="col-md-3 d-flex"><img class="img-fluid rounded" src="images/321.jpg" alt="image of 321 airplane" data-toggle="modal" data-target="#A-321">
-        <h4> Airbus 321 NEO</h4>
-    </div></div> <!-- end of container for planes -->
-
+        <div class="col-12 col-md-4 flexpic"data-toggle="modal" data-target="#A-320"><img class=" rounded" src="images/320.jpg" alt="image of 320 airplane" style="height: 200px;width: 350px;">
+            <h4 > Airbus 320-200</h4>
+        </div>
+        <div class="col-12 col-md-4 flexpic" data-toggle="modal" data-target="#A-321"><img class=" rounded" src="images/321.jpg" alt="image of 321 airplane" style="height: 200px;width: 350px;">
+            <h4 > Airbus 321 NEO</h4>
+        </div></div>
+        <small>Click on an image to see details!</small>
+    </div> <!-- end of container for planes -->
     <div class="modal bd-example-modal-lg fade" id="A-330" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title align-self-center" id="330-title">Airbus 330-200</h3>
+                    <h3 class="modal-title" id="330-title">Airbus 330-200</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="card">
-  <img class="card-img-top" src="images/330.jpg" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text">Cedar Airways has chosen a spacious layout for its A330, consisting of 44 seats in Cedar Class and 200 in Economy Class. The A330-200 is powered by Rolls Royce Trent 772 engines each delivering 72,000 lb of thrust and offering one of the lowest operating costs. The aircraft tremendous operating efficiency is enhanced by voluminous under-floor holds.</p>
-  </div>
-</div>
-                    
+                        <img class="card-img-top" src="images/330.jpg" alt="330">
+                        <div class="card-body">
+                            <p class="card-text">Cedar Airways has chosen a spacious layout for its A330, consisting of 44 seats in Cedar Class and 200 in Economy Class. The A330-200 is powered by Rolls Royce Trent 772 engines each delivering 72,000 lb of thrust and offering one of the lowest operating costs. The aircraft tremendous operating efficiency is enhanced by voluminous under-floor holds.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -93,17 +92,22 @@
             </div>
         </div>
     </div> <!-- end of 330 -->
-    <div class="modal fade" id="A-320" tabindex="-2" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+    <div class="modal bd-example-modal-lg fade" id="A-320" tabindex="-2" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="320-title">Airbus 320-200</h5>
+                    <h3 class="modal-title" id="320-title">Airbus 320-200</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Cedar Airways has chosen a spacious layout for its A320, consisting of 24 seats in Cedar Class and 102 in Economy Class. The A320 is powered by I.A.E. V2533 engines each delivering 27,000 lb of thrust and meeting the stringent noise requirements.</p>
+                    <div class="card">
+                        <img class="card-img-top" src="images/320.jpg" alt="320">
+                        <div class="card-body">
+                            <p class="card-text">Cedar Airways has chosen a spacious layout for its A320, consisting of 24 seats in Cedar Class and 102 in Economy Class. The A320 is powered by I.A.E. V2533 engines each delivering 27,000 lb of thrust and meeting the stringent noise requirements.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -112,18 +116,23 @@
         </div>
     </div>
     <!--end of 320 -->
-    <div class="modal fade" id="A-321" tabindex="-3" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+    <div class="modal bd-example-modal-lg fade" id="A-321" tabindex="-3" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="321-title">Airbus 321 NEO</h5>
+                    <h3 class="modal-title" id="321-title">Airbus 321 NEO</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>The A321neo, is powered by Pratt & Whitney’s PurePower PW1100G-JM geared turbofan engines that are highly efficient in energy consumption and low CO2 emissions, which will contribute in reducing the operation costs of the company as well as ground noise by 50%.
-                        While the aircraft cabin can accommodate 240 passengers, Cedar Airways chose to customize it to accommodate only 160 passengers, 28 seats in Business class and 132 in Economy class, with a view to provide the passengers with the highest well-being. The cabin combines luxury and spaciousness. It is equipped with the best seats and latest generation in-flight entertainment system in both Business and Economy classes, including high speed internet connectivity, reflecting the company's ambition to provide customers with the best products in the aviation industry.</p>
+                    <div class="card">
+                        <img class="card-img-top" src="images/321.jpg" alt="321">
+                        <div class="card-body">
+                            <p class="card-text">The A321neo, is powered by Pratt & Whitney’s PurePower PW1100G-JM geared turbofan engines that are highly efficient in energy consumption and low CO2 emissions, which will contribute in reducing the operation costs of the company as well as ground noise by 50%.
+                                While the aircraft cabin can accommodate 240 passengers, Cedar Airways chose to customize it to accommodate only 160 passengers, 28 seats in Business class and 132 in Economy class, with a view to provide the passengers with the highest well-being. The cabin combines luxury and spaciousness. It is equipped with the best seats and latest generation in-flight entertainment system in both Business and Economy classes, including high speed internet connectivity, reflecting the company's ambition to provide customers with the best products in the aviation industry.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -131,6 +140,42 @@
             </div>
         </div>
     </div> <!-- end of 321-->
+
+    <div class="container">
+        <div class=" row-content" id="affiliatedCompanies">
+            <h1 class="text-center text-primary" style="font-size: 9vh;"><i class="fa fa-building-o"></i> Affiliated Companies</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-content">
+            <p class="col-6 affiliatedText"> Cedar Airways Ground Handling (CAGH) <br>
+            <a href="https://www.meag.com.lb/">www.cagh.com</a></p>
+        <img class="rounded float-right col-6" src="images/cagh.jpg" alt="image of cagh" height="50%" width="50%">
+        </div>
+        <hr>
+        <div class="row row-content">
+            <img class="rounded float-left col-6 "src="images/casc.jpg" alt="image of casc" height="50%" width="50%">
+        <p class="affiliatedText col-6">Cedar Aircraft Services Company (CASC)<br>
+            <a href="http://www.masco.com.lb/">www.casc.com</a></p>
+        </div>
+        <hr>
+        <div class="row row-content">
+            <p class="affiliatedText col-6">Cedar Executive<br>
+            <a href="http://www.cedarexecutive.com/">www.cedarexecutive.com</a></p>
+        <img class="rounded col-6 float-right" src="images/cedarexecutive.jpg" alt="image of ce" height="50%" width="50%">
+        </div>
+        <hr>
+        <div class="row row-content">
+            <img class="rounded col-6 float-left" src="images/cas.jpg" alt="image of cas" height="50%" width="50%">
+        <p class="affiliatedText col-6">Cedar Airports Services S.A.L. (CAS)<br>
+            <a href="https://www.meag.com.lb/">www.cas.com</a></p>
+        </div>
+
+
+
+    </div>
+
     <footer class="footer bg-primary">
         <div class="container">
             <div class="row">
@@ -144,7 +189,7 @@
                         <li><a href="Contact_us.html">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col-7 col-sm-5">
+                <div class="col-7 col-sm-4">
                     <h5>Our Address</h5>
                     <address>
                         Beirut International Airport,<br>
@@ -155,8 +200,9 @@
                         <i class="fa fa-envelope fa-lg"></i> <a href="mailto:help@cedarairways.com">help@cedarairways.com</a>
                     </address>
                 </div>
-                <div class="col-12 col-sm-4 align-self-center">
+                <div class="col-12 col-sm-5 align-self-center">
                     <div class="text-center">
+                        
                         <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa-lg fa fa-facebook"></i></a>
                         <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa-linkedin fa fa-lg"></i></a>
                         <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa-twitter fa fa-lg"></i></a>

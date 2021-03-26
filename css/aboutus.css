@@ -24,7 +24,7 @@ body{
 
 .row-content {
   
-  padding: 20px 0px;
+  padding: 20px 10px;
   min-height: 200px; }
 
 #letsfly:hover {
@@ -59,11 +59,18 @@ nav ul li .active {
   }
 
   .description {
-    text-align: center;
+    text-align: center !important;
   }
   
+.flexpic:hover{
+  cursor: pointer;
 
-
+}
+.affiliatedText{
+  padding: 0px 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
 
 @media all and (min-width: 360px)
 {
