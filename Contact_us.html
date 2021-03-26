@@ -15,7 +15,7 @@
 
 <body style="background-image: url('images/contact_us.jpg');">
 
-<nav class="navbar navbar-expand-md navbar-inverse  " style="background-color: rgba(204, 204, 204, 0.3);">
+<nav class="navbar navbar-expand-md navbar-inverse" style="background-color: rgba(204, 204, 204, 0.2);">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo image" height="85px" width="80px"></a>
     <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,11 +40,15 @@
       </div> <!--div for collapse navbar-collapse -->
     </div> <!-- div for container-fluid -->   
   </nav>
+    <header class="jumbotron">
+    <div class="container">
+        <div class="d-flex row  row-content justify-content-center">
+            <div class="col-12 "><h1 class="welcome text-center" >We'd Love To Hear From You!</h1>      
+           </div>           
+        </div> <!-- row -->
+    </div> <!-- container-->
+    </header><!--jumbotron-->
 
-    <div class="description">
-        <h1>We'd Love To Hear From You!</h1>
-    </div>
-    
     <div class="row row-content d-flex justify-content-center">
         <div class="col-12 col-md-9">
         <form id="contactForm" autocomplete="on" class="contact_form">            
@@ -100,7 +104,7 @@
             
 <div class="container">
     <div class="row row-content">
-<table class="table table-light table-striped table-sm">
+<table id="contactTable" class="col-12 col-md-10 offset-md-1 table table-light table-striped table-sm">
     <thead > 
         <tr class="bg-primary"><td class="bg-primary"><h4 class="text-white">Alternatively, contact us at our following addresses:</h4></td>
             <td class="bg-primary"></td></tr>
@@ -137,17 +141,17 @@
   </tbody>
 </table></div></div>
 
-<footer class="footer">
+ <footer class="footer bg-primary">
          <div class="container">
                 <div class="row">
                     <div class="col-4 offset-1 col-sm-2">
                         <h5>Links</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="Book_a_trip.html">Book a Trip</a></li>
                             <li><a href="Traveler_info.html">Traveler Info</a></li>
                             <li><a href="about_us.html">About Us</a></li>
-                            <li><a href="Contact_us.html">Contact Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
                             
                         </ul>
                     </div>
@@ -183,5 +187,6 @@
 	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

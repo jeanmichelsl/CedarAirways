@@ -1,92 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="icon" href="images/logo.png" type="image/icon type">
-	<title>Cedar Airways | Discover the World With Us!</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-	<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
-	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <title>Cedar Airways | Discover the World With Us!</title>
+    <link rel="stylesheet" type="text/css" href="css/aboutus.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body style="background-image: url('images/About_Us.jpg');">
+    <nav class="navbar navbar-expand-md navbar-inverse  " style="background-color: rgba(204, 204, 204, 0.2);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo image" height="85px" width="80px"></a>
+            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavigation">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Book_a_trip.html"><span class="fa fa-plane"></span> Book a Trip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Traveler_info.html"><span class="fa fa-suitcase"></span> Traveler Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><span class="fa fa-info"></span> About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact_us.html"><span class="fa fa-address-card"></span> Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!--div for collapse navbar-collapse -->
+        </div> <!-- div for container-fluid -->
+    </nav>
+    <ul class="nav justify-content-center navbar-dark bg-primary">
+        <li class="nav-item active">
+            <a class="nav-link" href="#ourfleet"><i class="fa fa-plane"></i> Our Fleet</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#affiliatedCompanies"><i class="fa fa-building-o"></i> Affiliated Companies</a>
+        </li>
+    </ul>
+    <img class="img-fluid" src="images/ourfleet.jpg" alt="picture of an airplane">
+    <div class="container">
+        <h3> Cedar Airways has one of the most modern fleets in the world. Our all-new fleet gives you the world´s most sophisticated cabin and represents the ultimate operational efficiency, extended cabin space and increased flying range.</h3>
 
-	<nav class="navbar navbar-expand-md navbar-inverse  " style="background-color: rgba(204, 204, 204, 0.3);">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo image" height="85px" width="80px"></a>
-    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-      <div class="collapse navbar-collapse" id="mainNavigation">
-        <ul class="navbar-nav mr-auto ">
-          <li class="nav-item">
-          <a class="nav-link" href="Book_a_trip.html"><span class="fa fa-plane"></span> Book a Trip</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Traveler_info.html"><span class="fa fa-suitcase"></span> Traveler Info</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"><span class="fa fa-info"></span> About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"  href="Contact_us.html"><span class="fa fa-address-card"></span> Contact Us</a>
-        </li>
-        </ul>
-        
-      </div> <!--div for collapse navbar-collapse -->
-    </div> <!-- div for container-fluid -->   
-  </nav>
+        <div id="ourfleet">
+        <h1 class="description text-primary">Our Fleet</h1>
+    </div>
+    </div>
+    
+    <div class="container">
+        <div class="d-flex col-md-3 "><img class="img-fluid rounded" src="images/330.jpg" alt="image of 330 airplane" data-toggle="modal" data-target="#A-330">
+            <h4> Airbus 330-200</h4>
+        </div>
+        <div class="d-flex col-md-3 "><img class="img-fluid rounded" src="images/320.jpg" alt="image of 320 airplane" data-toggle="modal" data-target="#A-320">
+            <h4> Airbus 320-200</h4>
+        </div>
+    
+    <div class="col-md-3 d-flex"><img class="img-fluid rounded" src="images/321.jpg" alt="image of 321 airplane" data-toggle="modal" data-target="#A-321">
+        <h4> Airbus 321 NEO</h4>
+    </div></div> <!-- end of container for planes -->
 
-<footer class="footer">
-         <div class="container">
-                <div class="row">
-                    <div class="col-4 offset-1 col-sm-2">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="Book_a_trip.html">Book a Trip</a></li>
-                            <li><a href="Traveler_info.html">Traveler Info</a></li>
-                            <li><a href="about_us.html">About Us</a></li>
-                            <li><a href="Contact_us.html">Contact Us</a></li>
-                            
-                        </ul>
-                    </div>
-                    <div class="col-7 col-sm-5">
-                        <h5>Our Address</h5>
-                        <address>
-                            Beirut International Airport,<br>
-                            Airport road, Beirut<br>
-                            Lebanon<br>
-                            <i class="fa fa-phone fa-lg"></i> +961 1 629999<br>
-                            <i class="fa fa-fax fa-lg"></i> +961 1 629990<br>
-                            <i class="fa fa-envelope fa-lg"></i> <a href="mailto:help@cedarairways.com">help@cedarairways.com</a>
-                        </address>
-                    </div>
-                    <div class="col-12 col-sm-4 align-self-center">
-                        <div class="text-center">
-                           
-                            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa-lg fa fa-facebook"></i></a>
-                            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa-linkedin fa fa-lg"></i></a>
-                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa-twitter fa fa-lg"></i></a>
-                            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa-youtube fa fa-lg"></i></a>
-                            
-                        </div>
-                    </div>
+    <div class="modal bd-example-modal-lg fade" id="A-330" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title align-self-center" id="330-title">Airbus 330-200</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <p>© Copyright 2021 Cedar Airways</p>
+                <div class="modal-body">
+                    <div class="card">
+  <img class="card-img-top" src="images/330.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">Cedar Airways has chosen a spacious layout for its A330, consisting of 44 seats in Cedar Class and 200 in Economy Class. The A330-200 is powered by Rolls Royce Trent 772 engines each delivering 72,000 lb of thrust and offering one of the lowest operating costs. The aircraft tremendous operating efficiency is enhanced by voluminous under-floor holds.</p>
+  </div>
+</div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end of 330 -->
+    <div class="modal fade" id="A-320" tabindex="-2" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="320-title">Airbus 320-200</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Cedar Airways has chosen a spacious layout for its A320, consisting of 24 seats in Cedar Class and 102 in Economy Class. The A320 is powered by I.A.E. V2533 engines each delivering 27,000 lb of thrust and meeting the stringent noise requirements.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of 320 -->
+    <div class="modal fade" id="A-321" tabindex="-3" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="321-title">Airbus 321 NEO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>The A321neo, is powered by Pratt & Whitney’s PurePower PW1100G-JM geared turbofan engines that are highly efficient in energy consumption and low CO2 emissions, which will contribute in reducing the operation costs of the company as well as ground noise by 50%.
+                        While the aircraft cabin can accommodate 240 passengers, Cedar Airways chose to customize it to accommodate only 160 passengers, 28 seats in Business class and 132 in Economy class, with a view to provide the passengers with the highest well-being. The cabin combines luxury and spaciousness. It is equipped with the best seats and latest generation in-flight entertainment system in both Business and Economy classes, including high speed internet connectivity, reflecting the company's ambition to provide customers with the best products in the aviation industry.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end of 321-->
+    <footer class="footer bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="Book_a_trip.html">Book a Trip</a></li>
+                        <li><a href="Traveler_info.html">Traveler Info</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="Contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+                        Beirut International Airport,<br>
+                        Airport road, Beirut<br>
+                        Lebanon<br>
+                        <i class="fa fa-phone fa-lg"></i> +961 1 629999<br>
+                        <i class="fa fa-fax fa-lg"></i> +961 1 629990<br>
+                        <i class="fa fa-envelope fa-lg"></i> <a href="mailto:help@cedarairways.com">help@cedarairways.com</a>
+                    </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa-lg fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa-linkedin fa fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa-twitter fa fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa-youtube fa fa-lg"></i></a>
                     </div>
                 </div>
             </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright 2021 Cedar Airways</p>
+                </div>
+            </div>
+        </div>
     </footer>
-
-	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>

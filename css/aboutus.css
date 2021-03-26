@@ -17,14 +17,6 @@ body{
 .nav-item, .navbar-toggler{
 	color: azure;
 }
-#loginBtn {
-	font-size: 4vh;
-	cursor: pointer;
-	color: azure;
-}
-#loginBtn:hover {
-	color: #007bff;
-}
 .jumbotron {
   padding: 20px 20px;
   background-color:rgba(204, 204, 204, 0.2) !important;
@@ -46,6 +38,7 @@ nav ul li .active {
 	
 }
 .footer {
+  
   padding: 20px 0px;
   color: azure; }
 
@@ -64,6 +57,13 @@ nav ul li .active {
   .list-unstyled li a {
   	color: azure;
   }
+
+  .description {
+    text-align: center;
+  }
+  
+
+
 
 @media all and (min-width: 360px)
 {

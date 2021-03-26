@@ -1,100 +1,117 @@
-body{
-	
-	background-size: cover;
+body {
+
+    background-size: cover;
     background-position: center;
-    background-attachment: fixed;/*doesn't scroll with the page */
-    background-repeat: no-repeat; 
-    
+    background-attachment: fixed;
+    /*doesn't scroll with the page */
+    background-repeat: no-repeat;
+
 }
 
 
 
 .nav-link {
-	font-size: 4vh;
-	color: azure;
-	
+    font-size: 4vh;
+    color: azure;
+
 }
-.nav-item, .navbar-toggler{
-	color: azure;
+
+.nav-item,
+.navbar-toggler {
+    color: azure;
 }
+
 #loginBtn {
-	font-size: 4vh;
-	cursor: pointer;
-	color: azure;
+    font-size: 4vh;
+    cursor: pointer;
+    color: azure;
 }
+
 #loginBtn:hover {
-	color: #007bff;
+    color: #007bff;
 }
 
-
-  .row-header {
-  margin: 0px auto;
-  padding: 0px 0px; }
+.jumbotron {
+    padding: 10px 10px;
+    background-color: rgba(204, 204, 204, 0.2) !important;
+    color: azure;
+}
 
 .row-content {
-  margin: 0px auto;
-  padding: 50px 0px;
-  min-height: 400px; }
+
+    padding: 10px 0px;
+    min-height: 100px;
+}
 
 #letsfly:hover {
-	text-decoration: none;
+    text-decoration: none;
+}
+
+.welcome {
+    font-size: 4vh !important;
 }
 
 nav ul li .active {
-	color: #0275d8;
-	
-}
-.footer {
-  background-color: #0275d8;
-  margin: 0px auto;
-  padding: 20px 0px;
-  color: azure; }
-
-  address, {
-  font-size: 80%;
-  margin: 0px;
-  color: azure; }
-
-  address a {
-  	color: azure;
-  }
-  address a:hover {
-  	color: azure;
-  }
-
-  .list-unstyled li a {
-  	color: azure;
-  }
-
-.description {
-
-    justify-content: all;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.description h1 {
-    text-align: center;
     color: #0275d8;
-    font-size: 3rem;
 
+}
+
+.footer {
+   
+    padding: 20px 0px;
+    color: azure;
+}
+
+address,
+    {
+    font-size: 80%;
+    margin: 0px;
+    color: azure;
+}
+
+address a {
+    color: azure;
+}
+
+address a:hover {
+    color: azure;
+}
+
+.list-unstyled li a {
+    color: azure;
+}
+
+input.invalid,
+select.invalid {
+    background-color: #ffdddd;
 }
 
 .contact_form {
     background-color: hsla(0, 0%, 95%, 0.2);
     border-radius: 20px;
     padding: 80px 80px;
-    margin: 50px 20px;
+    margin: 20px 20px;
 
 }
+
 label {
-    font-size: 1.3rem;   
+    font-size: 1.3rem;
     padding: 12px 12px 12px 0;
-    display: inline-block; /*blocks can be next to each other */
+    display: inline-block;
+    /*blocks can be next to each other */
 }
 
 select:required:invalid {
     color: gray;
+}
+
+#contactTable {
+    border-radius: 10px;
+}
+
+
+@media all and (min-width: 360px) {
+    .welcome {
+        font-size: 7vh !important;
+    }
 }
