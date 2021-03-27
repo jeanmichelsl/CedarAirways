@@ -26,16 +26,11 @@ body{
   color: azure; }
 
 .row-content {
-  
-  padding: 20px 10px;
-  min-height: 200px; }
+  margin: 10px 10px;
+  padding: 10px 10px;
+  }
 
-#letsfly:hover {
-	text-decoration: none;
-}
-.welcome{
-  font-size:4vh !important;
-}
+
 nav ul li .active {
 	color: #0275d8;
 	
@@ -66,20 +61,11 @@ nav ul li .active {
   }
   
 
-.flexpic:hover{
-  cursor: pointer;
-
-}
-.affiliatedText{
-  padding: 0px 20px;
-  font-size: 1rem;
-  font-weight: bold;
-}
-.aboutTitle{
-  font-size: 200%;
-}
-.aboutText{
-  font-size: 2.5vh;
+.card-img-tops{
+	max-width: 30%;
+	height: auto;
+	align-self: center;
+	padding: 10px 10px;
 }
 
 #scrollBtn {
@@ -97,22 +83,31 @@ nav ul li .active {
   font-size: 18px; /* Increase font size */
 }
 
+
+.TravelerTitle {
+	font-size: 200%;
+}
 .logo{
-  transition: all ease-in 0.2s;
+	transition: all ease-in 0.2s;
 }
 .logo:hover {
-  transform: scale(1.3); 
+	transform: scale(1.3); 
 }
 
-@media all and (min-width: 360px)
+.BaggageCollapse, .TravelerTitle {
+	font-size: 4vh;
+}
+.bi-info-square{
+	font-size: 150%;
+}
+@media all and (min-width: 480px)
 {
-  .affiliatedText{
-    font-size: 1.3rem;
+  
+  .TravelerTitle{
+    font-size: 3rem;
   }
-  .aboutTitle{
-    font-size: 8vh;
+  .BaggageCollapse {
+  	font-size: 2rem;
   }
-  .aboutText{
-    font-size: 4vh;
-  }
+  
 }
