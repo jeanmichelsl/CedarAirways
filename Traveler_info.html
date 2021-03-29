@@ -16,7 +16,7 @@
 </head>
 
 <body style="background-color: azure;">
-    <nav class="navbar navbar-expand-md navbar-inverse  " style="background-color: #7CC6FE;">
+    <nav class="navbar navbar-expand-md navbar-inverse  " style="background-color: #7CC6FE; width: 100%;">
         <div class="container-fluid">
             <a class="navbar-brand logo" href="index.html"><img src="images/logo.png" alt="logo image" height="85px" width="80px"></a>
             <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,21 +41,21 @@
             <!--div for collapse navbar-collapse -->
         </div> <!-- div for container-fluid -->
     </nav>
-    <ul id="subNavigation" class="nav justify-content-center navbar-dark bg-primary">
+    <ul id="subNavigation" class="nav justify-content-center navbar-dark bg-primary" style="width: 100%;">
         <li class="nav-item active">
-            <a class="nav-link" href="#BaggageInfo"><i class="fa fa-suitcase"></i> Baggage Info</a>
+            <a class="nav-link text-center" href="#BaggageInfo"><i class="fa fa-suitcase"></i> Baggage Info</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#CheckinInfo"><i class="fa fa-user"></i> Checkin Info</a>
+            <a class="nav-link text-center" href="#CheckinInfo"><i class="fa fa-user"></i> Checkin Info</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#PassengerServices"><i class="bi bi-info-circle"></i> Passenger Services</a>
+            <a class="nav-link text-center" href="#PassengerServices"><i class="bi bi-info-circle"></i> Passenger Services</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#InflightServices"><i class="bi bi-wifi"></i> Inflight Services</a>
+            <a class="nav-link text-center" href="#InflightServices"><i class="bi bi-wifi"></i> Inflight Services</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#olba"><i class="bi bi-geo-alt" style="text-align: center;"></i> Beirut International Airport</a>
+            <a class="nav-link text-center" href="#olba"><i class="bi bi-geo-alt"></i> Beirut International Airport</a>
         </li>
     </ul>
     <div class="container">
@@ -65,17 +65,17 @@
     </div>
     <div class="container">
         <div class="accordion" id="baggage">
-            <div class="card">
-                <div id="BaggageOne">
-                    <!-- ken fi class card-header -->
-                    <h2 class="mb-0">
+            <div class=" row">
+                <div id="BaggageOne" class="col-12">
+                    
+                    <h1>
                         <button class="btn btn-lg btn-block btn-outline-info text-left" type="button" data-toggle="collapse" data-target="#collapseBOne" aria-expanded="false" aria-controls="collapseBOne"><i class="bi bi-chevron-double-right"></i>
                             Carry-on Baggage
                         </button>
-                    </h2>
+                    </h1>
                 </div>
-                <div id="collapseBOne" class="collapse" aria-labelledby="BaggageOne" data-parent="#baggage">
-                    <div class="card-body">
+                <div id="collapseBOne" class="collapse col-12" aria-labelledby="BaggageOne" data-parent="#baggage">
+                    <div class="card card-body">
                         <div class="card-header">
                     <h4>Weight and Size</h4>
                 </div>
@@ -114,15 +114,15 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div id="BaggageTwo">
-                    <h2 class="mb-0">
+            <div class="row">
+                <div id="BaggageTwo" class="col-12">
+                    <h1>
                         <button class="btn btn-lg btn-block btn-outline-info collapsed text-left" type="button" data-toggle="collapse" data-target="#collapseBTwo" aria-expanded="false" aria-controls="collapseBTwo"><i class="bi bi-chevron-double-right"></i> Checked Baggage
                         </button>
-                    </h2>
+                    </h1>
                 </div>
-                <div id="collapseBTwo" class="collapse" aria-labelledby="BaggageTwo" data-parent="#baggage">
-                    <div class="card-body">
+                <div id="collapseBTwo" class="collapse col-12" aria-labelledby="BaggageTwo" data-parent="#baggage">
+                    <div class="card card-body">
                         <div class="card-header">
                     <h4>Weight, Size and Number</h4>
                 </div>
@@ -148,16 +148,16 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div id="BaggageThree">
-                    <h2 class="mb-0">
+            <div class="row">
+                <div id="BaggageThree" class="col-12">
+                    <h1>
                         <button class="btn btn-lg btn-block btn-outline-info collapsed text-left" type="button" data-toggle="collapse" data-target="#collapseBThree" aria-expanded="false" aria-controls="collapseBThree"><i class="bi bi-chevron-double-right"></i>
-                            If Your Checked Baggage Goes Missing
+                            Missing Baggage
                         </button>
-                    </h2>
+                    </h1>
                 </div>
-                <div id="collapseBThree" class="collapse" aria-labelledby="BaggageThree" data-parent="#baggage">
-                    <div class="card-body">
+                <div id="collapseBThree" class="collapse col-12" aria-labelledby="BaggageThree" data-parent="#baggage">
+                    <div class="card card-body">
                         <p>Globally 99.5% of all baggage travels with the passenger as planned and the vast majority of bags that are mishandled are returned to the passenger within 48 hours. This does not detract from the fact that arriving without your baggage is a significant inconvenience.
                     Many baggage mishandlings occur at the transfer point due to punctuality issues, and these are often caused by air traffic control congestion. Sometimes it is simply not possible to move the bags between flights in the time available. IATA and its members continue to work hard to improve baggage performance further.
                     If your bag is not delivered at the baggage reclaim, <b> it is important that you file a missing bag report in the baggage reclaim area before you leave the airport</b>.</p>
@@ -170,7 +170,7 @@
       </div>
     <!--container-->
     <div class="container">
-        <div class=" row-content">
+        <div class="row row-content">
             <h1 class="col-12 text-center text-primary TravelerTitle" id="CheckinInfo"> Checkin Information</h1>
         </div>
         <div class="row row-content">
@@ -178,68 +178,73 @@
         </div>
     </div>
     <div class="container">
-        <div class="card col-12" style="width: 40%;">
+      <div class="row">
+        <div class="card col-12 col-md-5" style="width: auto;">
             <img src="images/checkin.png" class="card-img-tops" alt="checkin image">
             <div class="card-body">
                 <h5 class="card-title">Checkin Counters</h5>
                 <p class="card-text">Check-in counters will normally open three hours prior to scheduled departure time and closes 45 minutes to 1 hour prior to scheduled departure time. Boarding gates will close 15 minutes prior to departure time.</p>
             </div>
-        </div>
-        <div class="card col-12 ml-auto" style="width: 40%;">
+        </div></div>
+        <div class="row">
+        <div class="card col-12 ml-auto col-md-5" style="width: auto;">
             <img src="images/refusetravel.png" class="card-img-tops" alt="refusal to travel image">
             <div class="card-body">
                 <h5 class="card-title">Right to Refuse Travel</h5>
                 <p class="card-text">We reserve the right to refuse travel to any Passenger whose documents do not appear to be in order; who arrive late at check-in or the boarding gate or who refuse to follow the set out rules of the airline e.g., excess baggage payment. Should any of these occur we will not make any refund or provide any alternative flight.</p>
             </div>
-        </div>
-        <div class="card col-12" style="width:40%;">
+        </div></div>
+        <div class="row">
+        <div class="card col-12 col-md-5" style="width: auto;">
             <img src="images/passengersinfo.png" class="card-img-tops" alt="passenger info image">
             <div class="card-body">
                 <h5 class="card-title">Passenger Information</h5>
                 <p class="card-text">Passengers must present themselves at check-in with their Confirmation Reference and valid Passport, together with any other travel documentation required for the journey they are undertaking e.g. visa.
                     For those Passengers who require assistance and who have arranged this in advance, we would recommend that you check-in at least 3 hour prior to scheduled departure time.</p>
             </div>
-        </div>
-        <div class="card col-12 ml-auto" style="width: 40%;">
+        </div></div>
+        <div class="row">
+        <div class="card col-12 ml-auto col-md-5" style="width: auto;">
             <i class="fas fa-5x fa-luggage-cart text-center text-primary"></i>
             <div class="card-body">
                 <h5 class="card-title">Baggage Receipt</h5>
                 <p class="card-text">A Baggage Receipt will be issued for each item of baggage you check-in to be loaded into the aircraft hold, please ensure you retain the baggage receipt until such time as you are satisfied that your checked baggage has been satisfactorily delivered to you. A Baggage Tag will be affixed to each piece of checked baggage displaying the flight number and destination to which you are travelling.</p>
             </div>
-        </div>
-        <div class="container">
-            <div class="card col-12" style="width: 40%;">
+        </div></div>
+        <div class="row">
+            <div class="card col-12 col-md-5" style="width: auto;">
                 <i class="fas fa-5x text-primary text-center fa-suitcase-rolling"></i>
                 <div class="card-body">
                     <h5 class="card-title">Baggage</h5>
                     <p class="card-text">As Passengers and their baggage are subject to security screening throughout their journey, it is recommended that you ensure that your cabin baggage is packed in such a way that, if you are requested to do so by airport personnel, you are able to transfer articles into your checked baggage.</p>
                 </div>
-            </div>
-            <div class="card col-12 ml-auto" style="width: 40%;">
+            </div></div>
+            <div class="row">
+            <div class="card col-12 ml-auto col-md-5" style="width: auto; max-width: 90%;">
                 <img src="images/checkinfailure.png" class="card-img-tops" alt="failure to checkin">
                 <div class="card-body">
                     <h5 class="card-title">Failure To Check-In</h5>
                     <p class="card-text">Passengers failing to check-in by the required minimum check-in times above will not be accepted for travel and will lose their seats. If you arrive to check-in outside of these times you will lose your flight and no compensation will be given. We regret that Passengers who fail to check-in within the times specified will not be entitled to a refund, credit or free transfer of flights.</p>
                 </div>
-            </div>
+            </div></div>
         </div> <!-- container for checkin info -->
         <div class="container">
-            <div class=" row-content" id="PassengerServices">
-                <h1 class="text-center text-primary TravelerTitle" id="BaggageInfo"> Passenger Services</h1>
+            <div class="row row-content" id="PassengerServices">
+                <h1 class="col-12 text-center text-primary TravelerTitle" id="BaggageInfo"> Passenger Services</h1>
             </div>
         </div>
+        <div class="container">
         <div class="accordion" id="pax">
-            <div class="card">
-                <div id="headingOne">
-                    <!-- ken fi class card-header -->
-                    <h2 class="mb-0">
-                        <button class="btn btn-lg btn-block btn-outline-info text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><i class="fas fa-2x fa-child"></i>
+            <div class="row">
+                <div class="col-12">
+                    <h1 id="headingOne" >
+                        <button class="btn btn-lg btn-block btn-outline-info text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><i class="fas fa-lg fa-child"></i>
                             Unaccompanied Minors
                         </button>
-                    </h2>
+                    </h1>
                 </div>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#pax">
-                    <div class="card-body">
+                <div id="collapseOne" class="collapse col-12" aria-labelledby="headingOne" data-parent="#pax">
+                    <div class="card card-body">
                         Children under 5 years of age will not be accepted for travel unaccompanied on board our flights. A special Escort (CA flight attendant) is required, and a special charge applies.
                         Children from 5 to 11 years old inclusive traveling unaccompanied: a special UM handling is obligatory, and a special charge applies.
                         Upon request, UM handling can be offered by Cedar Airways against a charge for minors between 12 and 16 years old.
@@ -247,29 +252,29 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div id="headingTwo">
-                    <h2 class="mb-0">
-                        <button class="btn btn-lg btn-block btn-outline-info collapsed text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fas fa-2x fa-baby"></i> Pregnant Women
+            <div class="row">
+                  <div class="col-12">
+                    <h1 id="headingTwo">
+                        <button class="btn btn-lg btn-block btn-outline-info collapsed text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fas fa-lg fa-baby"></i> Pregnant Women
                         </button>
-                    </h2>
+                    </h1>
                 </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#pax">
-                    <div class="card-body">
+                <div id="collapseTwo" class="collapse col-12" aria-labelledby="headingTwo" data-parent="#pax">
+                    <div class="card card-body">
                         For Pregnancy beyond 34 weeks, mothers may be accepted provided a written certificate from attending physician that affirms no medical objection against that particular journey
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div id="headingThree">
-                    <h2 class="mb-0">
-                        <button class="btn btn-lg btn-block btn-outline-info collapsed text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fas fa-2x fa-wheelchair"></i>
+            <div class="row">
+                  <div class="col-12">
+                    <h1  id="headingThree">
+                        <button class="btn btn-lg btn-block btn-outline-info collapsed text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fas fa-lg fa-wheelchair"></i>
                             Physically Challenged
                         </button>
-                    </h2>
+                    </h1>
                 </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#pax">
-                    <div class="card-body">
+                <div id="collapseThree" class="collapse col-12" aria-labelledby="headingThree" data-parent="#pax">
+                    <div class="card card-body">
                         Upon completing your reservation, and in case you need special assistance during your journey, you are required to notify your booking office (either travel agency, Cedar Airways sales offices, E-mail: <a href="mailto:specialsvcs@cedarairways.com.lb"> specialsvcs@cedarairways.com.lb</a>) at least 48 hours prior to your departure.In case no such notification is made in advance, Cedar Airways and its contracted service providers will not be able to provide you with the required assistance.
                         On the day of your travel, we recommend that you are at the airport at least 3 hours before your departure time.For more information contact CAAG Special Services at Beirut International Airport Tel:+961 (0)1 622773 / 623773 ; E-mail: <a href="mailto:specialcare@caag.com.lb"> specialcare@caag.mea.lb</a> <br>
                         Upon your request, Cedar Airways will provide you with a wheelchair free of charge. Please make sure you inform us of this either during or after booking.
@@ -282,24 +287,24 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div id="headingfour">
-                    <h2 class="mb-0">
-                        <button class="btn btn-lg btn-block btn-outline-info collapsed text-left" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour"><i class="fas fa-2x fa-dog"></i>
-                            Transportation of Live Animals
+            <div class="row">
+                <div class="col-12">
+                    <h1 id="headingfour">
+                        <button class="btn btn-lg btn-block btn-outline-info collapsed text-left" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour"><i class="fas fa-lg fa-dog"></i>
+                            Live Animals
                         </button>
-                    </h2>
-                </div>
-                <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#pax">
-                    <div class="card-body">
-                        Only pets weighing 7kgs or less may be accepted in the cabin and placed under the seat in front of the passenger. The weight of the pet and container should not exceed 10kgs provided that the Maximum size of the container is L= 40 cm, W= 24 cm, and H= 24 cm and that they are reserved in advance . Pet Soft Cage is permitted.Special excess baggage charges apply regardless of your normal baggage allowance. Cedar Airways Sales Offices & Special Services Unit should be advised ahead of time, please contact Special Services for reservation and further information at <a href="mailto:specialsvcs@cedarairways.com.lb"> specialsvcs@cedarairways.com.lb</a> or +961 1 629999
+                    </h1></div>
+                
+                <div id="collapsefour" class="collapse col-12" aria-labelledby="headingfour" data-parent="#pax">
+                    <div class="card card-body">
+                        Only pets weighing 7kgs or less may be accepted in the cabin and placed under the seat in front of the passenger. The weight of the pet and container should not exceed 10kgs provided that the Maximum size of the container is L= 40 cm, W= 24 cm, and H= 24 cm and that they are reserved in advance. Pet Soft Cage is permitted.Special excess baggage charges apply regardless of your normal baggage allowance. Cedar Airways Sales Offices & Special Services Unit should be advised ahead of time, please contact Special Services for reservation and further information at <a href="mailto:specialsvcs@cedarairways.com.lb"> specialsvcs@cedarairways.com.lb</a> or +961 1 629999
                     </div>
                 </div>
             </div>
-        </div>
+        </div></div>
         <!--container for accordion -->
         <div class="container">
-            <div class=" row-content">
+            <div class="row row-content">
                 <h1 class="col-12 text-center text-primary TravelerTitle" id="InflightServices"> Inflight Services</h1>
             </div>
             <div class="row row-content">
@@ -331,7 +336,7 @@
         </div>
         <!--end of pax services -->
         <div class="container">
-            <div class=" row-content">
+            <div class="row row-content">
                 <h1 class="col-12 text-center text-primary TravelerTitle" id="olba"> Beirut International Airport</h1>
             </div>
             <div class="row row-content">
