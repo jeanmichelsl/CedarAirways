@@ -100,6 +100,16 @@ nav ul li .active {
 .bi-info-square{
 	font-size: 150%;
 }
+.BaggageAccordion {
+  font-size: 200%;
+}
+
+.paxServices {
+  object-fit: cover;
+  max-height: 300px;
+  min-height: 300px;
+  width: 100%;
+}
 @media all and (min-width: 480px)
 {
   
