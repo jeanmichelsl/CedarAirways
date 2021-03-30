@@ -17,3 +17,37 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//JS for signup form
+function validate(){
+	var valid=true;
+	var inputvalidator= document.getElementsByClassName('inputValidator');
+	var pass= document.getElementById('password');
+	var confirmpass= document.getElementById('confirmPassword');
+
+	if(pass.value.match(confirmpass.value) || pass.value!="" || confirmpass.value!=""){
+	
+	valid=true;
+
+	}
+	else { valid=false;}
+
+	for (i=0; i<inputvalidator.length;i++){
+		if(inputvalidator[i].value==""){
+			inputvalidator[i].className+="invalid";
+			valid=false;}
+		else{valid=true;}
+	};
+
+	if(valid==false) {
+		$('#submitModal').modal('hide');
+		$('#confirmpass').tooltip('show');
+	}
+	else {
+		$('#submitModal').modal('show');
+	}
+
+}
+
+
+// end of signup form

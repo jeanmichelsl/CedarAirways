@@ -1,0 +1,99 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;/*doesn't scroll with the page */
+    background-repeat: no-repeat; 
+    
+}
+
+.logo{
+  transition: all ease-in 0.2s;
+}
+.logo:hover {
+  transform: scale(1.3); 
+}
+
+.nav-link {
+    font-size: 4vh;
+    color: azure;
+    
+}
+.nav-item, .navbar-toggler{
+    color: azure;
+}
+#loginBtn {
+    font-size: 4vh;
+    cursor: pointer;
+    color: azure;
+}
+#loginBtn:hover {
+    color: #007bff;
+}
+.jumbotron {
+  padding: 20px 20px;
+  background-color:rgba(204, 204, 204, 0.2) !important;
+  color: azure; }
+
+.row-content {
+  
+  padding: 20px 0px;
+  min-height: 200px; }
+
+#letsfly:hover {
+    text-decoration: none;
+}
+.welcome{
+  font-size:4vh !important;
+}
+nav ul li .active {
+    color: #0275d8;
+    
+}
+.footer {
+  padding: 20px 0px;
+  color: azure; }
+
+  address, {
+  font-size: 80%;
+  margin: 0px;
+  color: azure; }
+
+  address a {
+    color: azure;
+  }
+  address a:hover {
+    color: azure;
+  }
+
+  .list-unstyled li a {
+    color: azure;
+  }
+
+#reset{
+    color: azure;
+}
+#reset:hover{
+    background-color: white;
+    color: #292b2c;
+}
+
+label {
+    font-size: 1.3rem;
+    padding: 12px 12px 12px 0;
+    
+}
+
+form {
+   background-color:rgba(204, 204, 204, 0.2);
+   border-radius:  30px;
+   padding: 20px 20px;
+}
+
+input.invalid {
+
+  background-color: red;
+}
