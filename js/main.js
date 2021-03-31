@@ -24,30 +24,56 @@ function validate(){
 	var inputvalidator= document.getElementsByClassName('inputValidator');
 	var pass= document.getElementById('password');
 	var confirmpass= document.getElementById('confirmPassword');
-
-	if(pass.value.match(confirmpass.value) || pass.value!="" || confirmpass.value!=""){
-	
+	var selectvalidator= document.getElementsByClassName('selectValidator');
+	var inputerror= document.getElementsByClassName('error');
+	$("[data-toggle='tooltip']").tooltip('dispose');
+	if(pass.value.match(confirmpass.value)){	
 	valid=true;
-
 	}
-	else { valid=false;}
+	else { 
+		valid=false;
+	$("[data-toggle='tooltip']").tooltip('show');
+	}
+
+	if(pass.value!="" && confirmpass.value!="")
+		{valid=true;}
+	else{
+		document.getElementById('errorP').removeAttribute('hidden');
+		document.getElementById('errorCO').removeAttribute('hidden');
+		valid=false;
+	}
 
 	for (i=0; i<inputvalidator.length;i++){
 		if(inputvalidator[i].value==""){
-			inputvalidator[i].className+="invalid";
+			inputvalidator[i].classList.add("invalid");
+			inputerror[i].removeAttribute('hidden');
 			valid=false;}
-		else{valid=true;}
+		else{
+			inputvalidator[i].classList.add('success');
+			valid=true;}
 	};
 
+	for(j=0; j<selectvalidator.length;j++){
+		if(selectvalidator[j].value==""){
+			selectvalidator[j].classList.add('invalid');
+			inputerror[j].removeAttribute('hidden');
+			valid=false;
+		}
+		else {
+			selectvalidator[j].classList.add('success');
+			valid=true;}
+	}
 	if(valid==false) {
 		$('#submitModal').modal('hide');
-		$('#confirmpass').tooltip('show');
+		$('#errorModal').modal('show');
 	}
 	else {
 		$('#submitModal').modal('show');
+		$('#errorModal').modal('hide');
 	}
 
 }
+
 
 
 // end of signup form
