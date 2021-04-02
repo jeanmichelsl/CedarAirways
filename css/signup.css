@@ -34,9 +34,12 @@ body{
     color: #007bff;
 }
 .jumbotron {
-  padding: 20px 20px;
-  background-color:rgba(204, 204, 204, 0.2) !important;
-  color: azure; }
+   background-size: cover;
+    background-position: center;
+   
+    background-repeat: no-repeat; 
+    background-image: url('../images/signup.jpg');
+ }
 
 .row-content {
   
@@ -87,22 +90,18 @@ label {
     
 }
 
-form {
-   background-color:rgba(204, 204, 204, 0.2);
-   border-radius:  30px;
-   padding: 20px 20px;
-}
 
-.invalid {border-width: 2px !important;
-  border-color : #d9534f !important;
-}
-.success {
-  border-width: 2px !important;
-  border-color: #5cb85c !important;
-}
-
-.error {
-  color: #d9534f;
+.invalid-feedback, .valid-feedback {
+  
   font-weight: bold;
-  font-size: 110%;
+  
+}
+.form {
+  margin: 10px 10px;
+  border-width: 1px !important;
+  border-color: #DEDEDE;
+  border-style: solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 4px 6px 8px -5px rgba(110,109,110,0.61);
 }

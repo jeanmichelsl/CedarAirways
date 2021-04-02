@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/all.min.css">
 </head>
-<body style="background-image: url(images/signup.jpg);">
+<body>
 
-<nav class="navbar navbar-expand-md navbar-inverse  " style="background-color: rgba(204, 204, 204, 0.3); width: 100%;">
+<nav class="navbar navbar-expand-md navbar-inverse  " style="background-color: #7CC6FE;">
         <div class="container-fluid">
             <a class="navbar-brand logo" href="index.html"><img src="images/logo.png" alt="logo image" height="85px" width="80px"></a>
     <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,68 +81,84 @@
             </div>
         </div>
     </div> <!-- login modal -->
-
-     <div class="container">
+    <div class="jumbotron">
         <div class="row row-content" >
-            <h1 class=" text-white col-12"> Join us to benefit from Cedar Miles!</h1>
+            <h1 class=" text-white col-6"> Join us to benefit from Cedar Miles!</h1>
         </div>
     </div>
+
+     
 <div class="container">
-<form class="form" id="form" action="signup.html">
+<form class="form was-validated" id="form" action="signup.html">
 	<h2>Basic Information</h2>
 	<div class="row">
+        
 	<div class="form-group col-12 col-md-6">
     <label for="FirstName">First Name</label>
     <input type="text" class="form-control inputValidator" id="FirstName" placeholder="First Name" required>
-    <small id="errorF" hidden class="error">*Enter Your First Name</small>
+    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Enter Your First Name</div>
+    
   </div>
 <div class="form-group col-12 col-md-6">
     <label for="LastName">Last Name</label>
     <input type="text" class="form-control inputValidator" id="LastName" placeholder="Last Name" required>
-    <small id="errorL" hidden class="error">*Enter Your Last Name</small>
-  </div></div>
+    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Enter Your Last Name</div>
+    
+  </div>
+  </div>
 
   <div class="row">
   <div class="form-group col-12 col-md-6">
     <label for="dob">Date of Birth</label>
     <input type="date" class="form-control inputValidator" id="dob" placeholder="dd/mm/yyyy" required>
-    <small class="error" hidden id="errorD">*Enter Your Date of Birth</small>
+    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Enter Your Date of Birth. Please note that you need to be at least 18 years old.</div>
+    
   </div>
+ 
   <div class="form-group col-12 col-md-6">
     <label for="phone">Phone Number</label>
     <input type="tel" class="form-control inputValidator" id="phone" placeholder="eg 961-76-123456" pattern="[0-9]{3}-[0-9]{2}-[0-9]{6}" required>
-    <small class="error" hidden id="errorPH">*Enter Your Phone Number</small>
+    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Enter Your Phone Number Correctly</div>
+    
   </div>
-</div>
+  </div>
+
 <div class="row">
   <div class="form-group col-12 col-md-6">
     <label for="email">Email address</label>
     <input type="email" class="form-control inputValidator" id="email" placeholder="name@example.com" required>
-    <small class="error" hidden id="errorE">*Enter Your Email</small>
+    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Enter Your Email Correctly</div>
+    
   </div>
+  
   <div class="form-group col-12 col-md-6">
-  	<label for="gender">Gender:</label>
+  	<label for="gender">Gender</label>
   <select class="form-control selectValidator" name="gender" id="gender" required>
   	<option value="" disabled selected>-Please Select-</option>
   	<option value="male">Male</option>
   	<option value="female">Female</option>
   </select>  
-  <small class="error" hidden id="errorG">*Select Your Gender</small>
+  <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Select an Option</div>
+    
+  </div>
 </div>
-</div>
+
  <div class="row">
   <div class="form-group col-12 col-md-6">
     <label for="password">Password</label>
-    <input type="password" class="form-control inputValidator" id="password" required>
-    <small style="font-weight: bold;">*Should consist of 8 alphanumeric characters with at least 1 special (@$&+-/#_?!).</small>
-    <small class="error" hidden id="errorP">*Enter a Password</small>
+    <input type="password" data-toggle="tooltip" title="Should consist of 8 alphanumeric characters with at least 1 special (@$&+-/#_?!)." class="form-control inputValidator" id="password" required>
+    
+    <div class="invalid-feedback" id="invalidPassword"><i class="bi bi-exclamation-circle"></i> Enter a correct Password</div>
+    
   </div>
+  
   <div class="form-group col-12 col-md-6">
     <label for="confirmPassword">Confirm Password</label>
-    <input type="password" data-toggle="tooltip" title="Passwords do not match!" class="form-control inputValidator" id="confirmPassword" required>
-    <small class="error" hidden id="errorCO">*Confirm Your Password</small>
+    <input type="password" data-toggle="tooltip" title="Passwords do not match!" class="form-control inputValidator " id="confirmPassword" required>
+    <div class="invalid-feedback" id="invalidPassword"><i class="bi bi-exclamation-circle"></i> Make Sure Your Passwords Match.</div>
+    
   </div>
-</div>
+  </div>
 <div class="row">
   <div class="form-group col-12 col-md-6">
     <label for="Nationality">Nationality</label>
@@ -394,8 +410,10 @@
                         <option value="Zambia">Zambia</option>
                         <option value="Zimbabwe">Zimbabwe</option>
                     </select>
-                    <small class="error" hidden id="errorN">*Select Your Nationality</small>
+                    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Select an Option</div>
+    
   </div>
+  
   <div class="form-group col-12 col-md-6">
   	<label for="Status">Marital Status</label>
   <select class="form-control" name="Status" id="Status">
@@ -412,8 +430,10 @@
 	<div class="form-group col-12 col-md-6">
     <label for="address">Address</label>
     <input type="text" class="form-control inputValidator" id="address" placeholder="Street Address" required>
-    <small class="error" hidden id="errorA">*Enter Your Address</small>
+    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Enter Your Address</div>
+    
   </div>
+  
 <div class="form-group col-12 col-md-6">
     <label for="address2">Address</label>
     <input type="text" class="form-control" placeholder="Street Address" id="address2">
@@ -423,8 +443,10 @@
 	<div class="form-group col-12 col-md-6">
     <label for="city">City</label>
     <input type="text" class="form-control inputValidator" placeholder="City" id="city" required>
-    <small class="error" hidden id="errorC">*Enter Your City</small>
+    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Enter Your City</div>
+    
   </div>
+  
 <div class="form-group col-6 col-md-3">
     <label for="poBox">PO Box</label>
     <input type="text" class="form-control" placeholder="PO Box" id="poBox">
@@ -432,14 +454,18 @@
 <div class="form-group col-6 col-md-3">
     <label for="zip">ZIP Code</label>
     <input type="text" class="form-control inputValidator" placeholder="ZIP" id="zip" required>
-    <small class="error" hidden id="errorZ">*Enter Your ZIP Code</small>
-  </div></div>
+    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Enter Your ZIP Code</div>
+    
+  </div>
+  </div>
   <div class="row">
 	<div class="form-group col-12 col-md-6">
     <label for="state">State/Province</label>
     <input type="text" class="form-control inputValidator" placeholder="State/Province" id="state" required>
-    <small class="error" hidden id="errorS">*Enter Your State/Province</small>
+    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Enter Your State/Province</div>
+    
   </div>
+  
 <div class="form-group col-12 col-md-6">
     <label for="country">Country</label>
     <select class="form-control selectValidator"id="country" required>
@@ -690,11 +716,13 @@
                         <option value="Zambia">Zambia</option>
                         <option value="Zimbabwe">Zimbabwe</option>
                     </select>
-                    <small class="error" hidden id="errorCT">*Select Your Country</small>
-  </div></div>
+                    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Select an Option</div>
+    
+  </div>
+  </div>
   <div class="row">
   <div class="btn-group col-12" role="group" >
-  <input  type="button" onclick="validate();" class="btn btn-primary" value="Sign up">
+  <input  type="button" class="btn btn-primary" value="Sign up">
   <button id="reset" type="reset" class="btn btn-secondary">Clear</button>
   </div>
 </div>
@@ -788,5 +816,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap-validate/dist/bootstrap-validate.js"></script>
 </body>
 </html>
