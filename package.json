@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "file:node_modules/@fortawesome/fontawesome-free",
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.6.0",
     "bootstrap-icons": "^1.4.0",
     "bootstrap-social": "^5.1.1",
     "bootstrap-validate": "^2.2.0",

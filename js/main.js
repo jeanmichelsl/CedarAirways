@@ -19,34 +19,59 @@ function topFunction() {
 }
 
 //JS for signup form
-	
+	var valid;
 var formSubmit= document.getElementById('form');
 var password= document.getElementById('password');
 var confirmPassword= document.getElementById('confirmPassword');
 var invalidFeedback = document.getElementById('invalidConfirmPassword');
-confirmPassword.oninput= SubmitValidator();
-function SubmitValidator()
-{
+
+confirmPassword.onchange= function(){
 	
-	if (password.value == confirmPassword.value)
+	if ((password.value == confirmPassword.value) &&(password.value!="") && (confirmPassword.value!=""))
 	{
 		confirmPassword.classList.add('is-valid');
 		confirmPassword.classList.remove('is-invalid');
-		return true;
+		valid=true;
 	}
 	else {
 		confirmPassword.classList.add('is-invalid');
 		confirmPassword.classList.remove('is-valid');	
 	$("[id='password']").tooltip('show');
-	return false;
+		valid=false;
 }
-	
+		return valid;
 	}
 
-function Check(){
-	if(SubmitValidator()){
-		$('#submitModal').modal('show');
+	document.getElementsByClassName('inputValidator').onchange= function(){
+		for(i=0;i<inputValidator.length;i++)
+		{
+			if (inputValidator[i].classList.contains('is-valid'))
+				valid=true;
+			if(inputValidator[i].classList.contains('is-invalid'))
+				valid=false;
+		}
+		return valid;
 	}
-	else {$('#errorModal').modal('show');}
+	document.getElementsByClassName('selectValidator').onchange= function(){
+		for(i=0;i<selectValidator.length;i++)
+		{
+			if (selectValidator[i].classList.contains('is-valid'))
+				valid=true;
+			if(selectValidator[i].classList.contains('is-invalid'))
+				valid=false;
+		}
+		return valid;
+	}
+
+document.getElementById('signup').onclick=function(){
+	if(valid==true){
+		$("#submitModal").modal('show');
+	}
+	if(valid==false){
+		$("#errorModal").modal('show');
+
+	}
 }
+
+
 // end of signup form

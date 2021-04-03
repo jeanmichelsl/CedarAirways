@@ -8,10 +8,13 @@
     <title>Cedar Airways | Sign Up</title>
     <link rel="stylesheet" type="text/css" href="css/signup.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+
+
 </head>
 <body>
 
@@ -83,7 +86,7 @@
     </div> <!-- login modal -->
     <div class="jumbotron">
         <div class="row row-content" >
-            <h1 class=" text-white col-6"> Join us to benefit from Cedar Miles!</h1>
+            <h1 class=" text-white col-12 col-md-6"> Join us to benefit from Cedar Miles!</h1>
         </div>
     </div>
 
@@ -96,13 +99,13 @@
 	<div class="form-group col-12 col-md-6">
     <label for="FirstName">First Name</label>
     <input type="text" class="form-control inputValidator" id="FirstName" placeholder="First Name" required>
-    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Enter Your First Name</div>
+    <div class="invalid-feedback"> Enter Your First Name</div>
     
   </div>
 <div class="form-group col-12 col-md-6">
     <label for="LastName">Last Name</label>
     <input type="text" class="form-control inputValidator" id="LastName" placeholder="Last Name" required>
-    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Enter Your Last Name</div>
+    <div class="invalid-feedback"> Enter Your Last Name</div>
     
   </div>
   </div>
@@ -111,14 +114,14 @@
   <div class="form-group col-12 col-md-6">
     <label for="dob">Date of Birth</label>
     <input type="date" class="form-control inputValidator" id="dob" placeholder="dd/mm/yyyy" required>
-    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Enter Your Date of Birth. Please note that you need to be at least 18 years old.</div>
+    <div class="invalid-feedback"> Enter Your Date of Birth. Please note that you need to be at least 18 years old.</div>
     
   </div>
  
   <div class="form-group col-12 col-md-6">
     <label for="phone">Phone Number</label>
     <input type="tel" class="form-control inputValidator" id="phone" placeholder="eg 961-76-123456" pattern="[0-9]{3}-[0-9]{2}-[0-9]{6}" required>
-    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Enter Your Phone Number Correctly</div>
+    <div class="invalid-feedback"> Enter Your Phone Number Correctly</div>
     
   </div>
   </div>
@@ -127,7 +130,7 @@
   <div class="form-group col-12 col-md-6">
     <label for="email">Email address</label>
     <input type="email" class="form-control inputValidator" id="email" placeholder="name@example.com" required>
-    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Enter Your Email Correctly</div>
+    <div class="invalid-feedback"> Enter Your Email Correctly</div>
     
   </div>
   
@@ -138,7 +141,7 @@
   	<option value="male">Male</option>
   	<option value="female">Female</option>
   </select>  
-  <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Select an Option</div>
+  <div class="invalid-feedback"> Select an Option</div>
     
   </div>
 </div>
@@ -148,14 +151,14 @@
     <label for="password">Password</label>
     <input type="password" data-toggle="tooltip" title="Should consist of 8 alphanumeric characters with at least 1 special (@$&+-/#_?!)." class="form-control inputValidator" id="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$">
     
-    <div class="invalid-feedback" id="invalidPassword"><i class="bi bi-exclamation-circle"></i> Enter a correct Password</div>
+    <div class="invalid-feedback" id="invalidPassword"> Enter a correct Password</div>
     
   </div>
   
   <div class="form-group col-12 col-md-6">
     <label for="confirmPassword">Confirm Password</label>
     <input type="password"class="form-control inputValidator " id="confirmPassword" required >
-    <div class="invalid-feedback" id="invalidConfirmPassword"><i class="bi bi-exclamation-circle"></i> Make Sure Your Passwords Match.</div>
+    <div class="invalid-feedback" id="invalidConfirmPassword"> Make Sure Your Passwords Match.</div>
     
   </div>
   </div>
@@ -410,7 +413,7 @@
                         <option value="Zambia">Zambia</option>
                         <option value="Zimbabwe">Zimbabwe</option>
                     </select>
-                    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Select an Option</div>
+                    <div class="invalid-feedback"> Select an Option</div>
     
   </div>
   
@@ -430,7 +433,7 @@
 	<div class="form-group col-12 col-md-6 was-validated">
     <label for="address">Address</label>
     <input type="text" class="form-control inputValidator" id="address" placeholder="Street Address" required>
-    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Enter Your Address</div>
+    <div class="invalid-feedback"> Enter Your Address</div>
     
   </div>
   
@@ -443,7 +446,7 @@
 	<div class="form-group col-12 col-md-6 was-validated">
     <label for="city">City</label>
     <input type="text" class="form-control inputValidator" placeholder="City" id="city" required>
-    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Enter Your City</div>
+    <div class="invalid-feedback"> Enter Your City</div>
     
   </div>
   
@@ -454,7 +457,7 @@
 <div class="form-group col-6 col-md-3 was-validated">
     <label for="zip">ZIP Code</label>
     <input type="text" class="form-control inputValidator" placeholder="ZIP" id="zip" required>
-    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Enter Your ZIP Code</div>
+    <div class="invalid-feedback"> Enter Your ZIP Code</div>
     
   </div>
   </div>
@@ -462,7 +465,7 @@
 	<div class="form-group col-12 col-md-6">
     <label for="state">State/Province</label>
     <input type="text" class="form-control inputValidator" placeholder="State/Province" id="state" required>
-    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Enter Your State/Province</div>
+    <div class="invalid-feedback"> Enter Your State/Province</div>
     
   </div>
   
@@ -716,13 +719,13 @@
                         <option value="Zambia">Zambia</option>
                         <option value="Zimbabwe">Zimbabwe</option>
                     </select>
-                    <div class="invalid-feedback"><i class="bi bi-exclamation-circle"></i> Select an Option</div>
+                    <div class="invalid-feedback"> Select an Option</div>
     
   </div>
   </div>
   <div class="row">
-  <div class="btn-group col-12" role="group" >
-  <button  type="button" onclick="Check();" class="btn btn-primary" id="signup">Sign up</button>
+  <div class="btn-group col-12 col-md-4" role="group" >
+  <button  type="button" class="btn btn-primary" id="signup">Sign up</button>
   <button id="reset" type="reset" class="btn btn-secondary">Clear</button>
   </div>
 </div>
@@ -813,11 +816,10 @@
             </div>
     </footer>
     
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>    
     <script src="js/main.js"></script>
 </body>
 </html>
