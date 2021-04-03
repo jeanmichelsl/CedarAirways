@@ -19,61 +19,34 @@ function topFunction() {
 }
 
 //JS for signup form
-
-document.getElementById('confirmPassword').onkeyup=function(){
-	var valid=true;
-	var inputvalidator= document.getElementsByClassName('inputValidator');
-	var pass= document.getElementById('password');
-	var confirmpass= document.getElementById('confirmPassword');
-	var selectvalidator= document.getElementsByClassName('selectValidator');
-	var inputerror= document.getElementsByClassName('error');
-	$("[data-toggle='tooltip']").tooltip('dispose');
-	if(pass.value.match(confirmpass.value)){	
-	valid=true;
-	}
-	else { 
-		valid=false;
-	$("[data-toggle='tooltip']").tooltip('show');
-	confirmpass.classList.remove('is-invalid');
-	confirmpass.classList.add('is-valid');
-	}
-
-	if(pass.value!="" && confirmpass.value!="")
-		{valid=true;}
-	else{
-		
-		valid=false;
-	}
-
-	for (i=0; i<inputvalidator.length;i++){
-		if(inputvalidator[i].value==""){
-			
-			valid=false;}
-		else{
-			
-			valid=true;}
-	};
-
-	for(j=0; j<selectvalidator.length;j++){
-		if(selectvalidator[j].value==""){
-			
-			valid=false;
-		}
-		else {
-			
-			valid=true;}
-	}
-	if(valid==false) {
-		$('#submitModal').modal('hide');
-		$('#errorModal').modal('show');
+	
+var formSubmit= document.getElementById('form');
+var password= document.getElementById('password');
+var confirmPassword= document.getElementById('confirmPassword');
+var invalidFeedback = document.getElementById('invalidConfirmPassword');
+confirmPassword.oninput= SubmitValidator();
+function SubmitValidator()
+{
+	
+	if (password.value == confirmPassword.value)
+	{
+		confirmPassword.classList.add('is-valid');
+		confirmPassword.classList.remove('is-invalid');
+		return true;
 	}
 	else {
-		$('#submitModal').modal('show');
-		$('#errorModal').modal('hide');
+		confirmPassword.classList.add('is-invalid');
+		confirmPassword.classList.remove('is-valid');	
+	$("[id='password']").tooltip('show');
+	return false;
+}
+	
 	}
 
+function Check(){
+	if(SubmitValidator()){
+		$('#submitModal').modal('show');
+	}
+	else {$('#errorModal').modal('show');}
 }
-
-
-
 // end of signup form

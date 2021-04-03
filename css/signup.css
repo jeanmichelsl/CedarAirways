@@ -90,12 +90,6 @@ label {
     
 }
 
-
-.invalid-feedback, .valid-feedback {
-  
-  font-weight: bold;
-  
-}
 .form {
   margin: 10px 10px;
   border-width: 1px !important;
@@ -105,3 +99,4 @@ label {
   border-radius: 10px;
   box-shadow: 4px 6px 8px -5px rgba(110,109,110,0.61);
 }
+
