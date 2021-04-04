@@ -19,7 +19,7 @@ function topFunction() {
 }
 
 //JS for signup form
-	var valid;
+	var valid=true;
 var formSubmit= document.getElementById('form');
 var password= document.getElementById('password');
 var confirmPassword= document.getElementById('confirmPassword');
@@ -42,36 +42,16 @@ confirmPassword.onchange= function(){
 		return valid;
 	}
 
-	document.getElementsByClassName('inputValidator').onchange= function(){
-		for(i=0;i<inputValidator.length;i++)
-		{
-			if (inputValidator[i].classList.contains('is-valid'))
-				valid=true;
-			if(inputValidator[i].classList.contains('is-invalid'))
-				valid=false;
-		}
-		return valid;
-	}
-	document.getElementsByClassName('selectValidator').onchange= function(){
-		for(i=0;i<selectValidator.length;i++)
-		{
-			if (selectValidator[i].classList.contains('is-valid'))
-				valid=true;
-			if(selectValidator[i].classList.contains('is-invalid'))
-				valid=false;
-		}
-		return valid;
-	}
-
-document.getElementById('signup').onclick=function(){
-	if(valid==true){
-		$("#submitModal").modal('show');
-	}
-	if(valid==false){
-		$("#errorModal").modal('show');
-
-	}
+formSubmit.onsubmit=function(){
+	$('#submitModal').modal('show');
+	event.preventDefault();
+          event.stopPropagation();
 }
-
-
+$('#dob').datepicker({
+    minDate: "-100y",
+    maxDate: "-18y",
+    maxViewMode: 3,
+    autoclose: true,
+    todayHighlight: true
+});
 // end of signup form
